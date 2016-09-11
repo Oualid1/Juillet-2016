@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;;
+    background-color: black;
+    margin-right: 20px;
+    margin-left:26px;
+
+    }
+section{
+  background-color: #e9e9e9;
+  height: 720px;
+  }
+
+#page {
+    padding-right: 50px;
+    padding-left: 219px;
+}
+
+#image {
+    display: flex;
+    align-items: baseline;
+    margin-top: 50px;
+    background-color: #e1dddd;
+    height: 40px;
+    width: 1331px;
+    margin-left: -219px;
+}
+
+.titre {
+    display: flex;
+    padding-right: 10px;
+    margin-left: 191px;
+    margin-top: 1px;
+    color: #a29e9e;
+}
+.sous-titre {
+    display: flex;
+    color: #7b7979;
+    font-size: 1em;
+    padding-right: 10px;
+}
+
+.image {
+    display: flex;
+    margin-right: 40px;
+    box-shadow: 0 0 14px #ccc;
+}
+/* Je sélectionne les <li> du menu horizontal */
+ #menu_horizontal li {
+display : inline;
+padding : 0 0.5em; /* Pour espacer les boutons entre eux */
+}
+#menu_horizontal {
+  list-style-type: none;
+  padding-left: 1px;
+  font-size: 26px;/* Car sinon les puces se placent n'importe où */
+}

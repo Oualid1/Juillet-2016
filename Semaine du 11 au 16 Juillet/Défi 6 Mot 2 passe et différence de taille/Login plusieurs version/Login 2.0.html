@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Login_Password</title>
+    </head>
+    <body>
+        <script>
+        var id = "joe@gmail.com";
+        var motDePasse = "12345";
+
+        var questionId = "Veuillez entrer votre identifiant.";
+        var questionMotDePasse = "Veuillez entrer votre mot de passe.";
+
+        var identification = true;
+
+        while (identification) {
+            var idUser = prompt(questionId);
+            if (idUser.length > 4) {
+                if (idUser.indexOf("@") != -1) {
+                    if (idUser == id) {
+                        var motDePasseUser = prompt(questionMotDePasse);
+                        if (motDePasseUser == motDePasse) {
+                            alert("Bienvenue !");
+                            identification = false;
+                        } else {
+                            alert("Mot de passe incorrect. Veuillez réessayer.");
+                        }
+                    } else {
+                        alert("Identifiant incorrect. Veuillez réessayer.");
+                    }
+                } else {
+                    alert("Erreur. Votre identifiant ne comporte pas d'arobase (@).");
+                }
+            } else {
+                alert("Erreur. Votre identifiant comporte moins de 5 caractères.");
+            }
+        }
+
+        var id2 = "toto@gmail.com";
+        var motDePasse2 = "54321";
+
+        var questionId2 = "Veuillez entrer votre identifiant.";
+        var questionMotDePasse2 = "Veuillez entrer votre mot de passe.";
+
+        var identification2 = true;
+
+        while (identification2) {
+            var idUser2 = prompt(questionId2);
+            if (idUser2.length > 4) {
+                if (idUser2.indexOf("@") != -1) {
+                    if (idUser2 == id2) {
+                        var motDePasseUser2 = prompt(questionMotDePasse2);
+                        if (motDePasseUser2 == motDePasse2) {
+                            alert("Bienvenue !");
+                            identification2 = false;
+                        } else {
+                            alert("Mot de passe incorrect. Veuillez réessayer.");
+                        }
+                    } else {
+                        alert("Identifiant incorrect. Veuillez réessayer.");
+                    }
+                } else {
+                    alert("Erreur. Votre identifiant ne comporte pas d'arobase (@).");
+                }
+            } else {
+                alert("Erreur. Votre identifiant comporte moins de 5 caractères.");
+            }
+        }
+
+        var id3 = "titi@gmail.com";
+        var motDePasse3 = "56789";
+
+        var questionId3 = "Veuillez entrer votre identifiant.";
+        var questionMotDePasse3 = "Veuillez entrer votre mot de passe.";
+
+        var identification3 = true;
+
+        while (identification3) {
+            var idUser3 = prompt(questionId3);
+            if (idUser3.length > 4) {
+                if (idUser3.indexOf("@") != -1) {
+                    if (idUser3 == id3) {
+                        var motDePasseUser3 = prompt(questionMotDePasse3);
+                        if (motDePasseUser3 == motDePasse3) {
+                            alert("Bienvenue !");
+                            identification3 = false;
+                        } else {
+                            alert("Mot de passe incorrect. Veuillez réessayer.");
+                        }
+                    } else {
+                        alert("Identifiant incorrect. Veuillez réessayer.");
+                    }
+                } else {
+                    alert("Erreur. Votre identifiant ne comporte pas d'arobase (@).");
+                }
+            } else {
+                alert("Erreur. Votre identifiant comporte moins de 5 caractères.");
+            }
+        }
+
+        var id4 = "tutu@gmail.com";
+        var motDePasse4 = "98765";
+
+        var questionId4 = "Veuillez entrer votre identifiant.";
+        var questionMotDePasse4 = "Veuillez entrer votre mot de passe.";
+
+        var identification4 = true;
+
+        while (identification4) {
+            var idUser4 = prompt(questionId4);
+            if (idUser4.length > 4) {
+                if (idUser4.indexOf("@") != -1) {
+                    if (idUser4 == id4) {
+                        var motDePasseUser4 = prompt(questionMotDePasse4);
+                        if (motDePasseUser4 == motDePasse4) {
+                            alert("Bienvenue !");
+                            identification4 = false;
+                        } else {
+                            alert("Mot de passe incorrect. Veuillez réessayer.");
+                        }
+                    } else {
+                        alert("Identifiant incorrect. Veuillez réessayer.");
+                    }
+                } else {
+                    alert("Erreur. Votre identifiant ne comporte pas d'arobase (@).");
+                }
+            } else {
+                alert("Erreur. Votre identifiant comporte moins de 5 caractères.");
+            }
+        }
+        </script>
+    </body>
+</html>

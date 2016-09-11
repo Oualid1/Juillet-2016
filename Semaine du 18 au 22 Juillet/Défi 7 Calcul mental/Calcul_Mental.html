@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+<body>
+  <script>
+var solution = 0;
+var fairecalcul = true;
+while(solution < 3) {
+var num1 = Math.round(Math.random() * 20);
+// alert ("Premier nombre est "+ num1);
+var num2 = Math.round(Math.random() * 10);
+// alert ("Premier nombre est "+ num2);
+var operateur = ["+" ,  "-" , "*"];
+var choixoperation = operateur[Math.floor(Math.random() * operateur.length)];
+//alert("Using the "+ choixoperation + "operateur.";)
+var reponse = eval(+num1 + choixoperation + +num2 );
+var reponseutilisateur = prompt("Combien font " + num1 + " " + choixoperation + " " + num2 + " ?");
+if(reponseutilisateur == reponse){
+  alert("Bien! Tu connais tes maths");
+   solution ++ ;
+   alert("Tu a maintenant" + solution + " points.");
+}
+   else if (solution < 0) {
+     alert("You lose.");
+     fairecalcul = false;
+     break;
+   }
+   else {
+     alert("Recommence !!!");
+     solution = solution - 1 ;
+     alert("tu a "  + solution + " points");
+   }
+}
+while (fairecalcul) {
+var nombre1 = Math.round(Math.random() * 10);
+var nombre2 = Math.round(Math.random() * 10);
+var nombre3 = Math.round(Math.random() * 10);
+var operateur = ["+" , "-" , "*"];
+var choixoperation1 = operateur[Math.floor(Math.random() * operateur.length)];
+var choixoperation2 = operateur[Math.floor(Math.random() * operateur.length)];
+var reponse = eval(+nombre1 + choixoperation1 + +nombre2 + choixoperation2 + +nombre3 );
+var reponseutilisateur = prompt("Dernière question ! Combien font " + nombre1 + " " + choixoperation1 + " " + nombre2 + " " + choixoperation2 + " " + nombre3 + " ?");
+if(reponseutilisateur == reponse){
+  alert("Bien joué ! T'es trop fort(e) !");
+  solution ++;
+  break ;
+}
+else {
+  alert("Faux ! Presque...");
+  break;
+}
+}
+
+</script>
+</body>
+</html>

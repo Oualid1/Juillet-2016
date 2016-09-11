@@ -1,0 +1,121 @@
+
+
+<!DOCTYPE html>
+
+ <html lang="fr">
+
+ <head>
+
+   <meta charset="utf-8"/>
+
+   <title>Sastantua pyramid</title>
+
+ </head>
+
+​
+
+ <body>
+
+   <script>
+
+   var a = 1;
+
+   var b = a;
+
+   var c = b+1;
+
+   var end = 10;
+
+   // Ecris un nombre de 1 à 10 // BASE de la pyramide
+
+   function putNbr(){
+
+     while(a < end && c < end){
+
+       document.write(b);
+
+       for (b = a; b < end; b++){
+
+         document.write(c);
+
+         c++;
+
+       }
+
+       b++;
+
+     };
+
+   };
+
+   putNbr();
+
+   b = 1;
+
+   function sastantua(){
+
+     var cpt = "";
+
+     var cunt = 0;
+
+     while (b && b <= 10 && cunt <= 10) {
+
+       cpt += b;
+
+       document.write("<p>"+ cpt + "<p>");
+
+       console.log(cpt)
+
+       b++;
+
+       cunt++;
+
+     };
+
+     };
+
+    sastantua();
+
+    c = 1;
+
+    function putNbr1(){
+
+      var wr = ""; // on ne peut additionner deux type diff 'a' est un INT et 'wr' est STR
+
+      for(i = 0; i < 10; i++){
+
+        for(i = 0; i < 10; i++){
+
+          wr += c;
+
+          document.write(wr + "<br/>");
+
+          c++;
+
+        };
+
+      };
+
+    };
+
+    putNbr1();
+
+    function printAlpha(){
+
+      var alpha = "abcdefghijklmnopqrstuvwxyz";
+
+      for (i = alpha[0]; i < alpha[26]; i++) {
+
+        document.write(alpha + "<br/>");
+
+      };
+
+    };
+
+    printAlpha();
+
+    </script>
+
+  </body>
+
+</html>

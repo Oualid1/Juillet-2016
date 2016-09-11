@@ -1,0 +1,60 @@
+
+
+<!DOCTYPE html>
+
+ <html lang="fr">
+
+ <head>
+
+   <meta charset="utf-8"/>
+
+   <title>Pyramid</title>
+
+ </head>
+
+​
+
+ <body>
+
+   <script>
+
+   var a = 1;
+
+   var b = a;
+
+   var c = b+1;
+
+   var end = 20;
+
+   // Ecris un nombre de 1 à 10 // BASE de la pyramide
+
+   function putNbr(){
+
+     while(a < end && c < end){
+
+       document.write(b);
+
+       for (b = a; b < end; b++){
+
+         document.write(c);
+
+         c++;
+
+       }
+
+       b++;
+
+     };
+
+   };
+
+   putNbr();
+
+   b = 8;
+
+
+    </script>
+
+  </body>
+
+</html>

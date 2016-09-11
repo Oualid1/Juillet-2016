@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>De quelle couleur...</title>
+</head>
+<body>
+<script type="text/javascript">
+    // on affiche la question
+    var question1 =  "De quelle couleur est le cheval blanc d'Henri IV";
+    var reponse1 = "blanc"
+
+    var question2 = "Combien y a t-il de nains ?";
+    var reponse2Text= "Sept";
+
+    var messageSuccès = "Bravo";
+    var messageErreur = "Faux";
+
+    // on affiche la question
+    var reponseQuestion1 = prompt(question1).toLowerCase();
+
+      console.log('reponseQuestion1', reponseQuestion1); // on affiche la réponse dans la console
+
+    // si la réponse donnée est "blanc"
+    if(reponseQuestion1 == reponse1 ){
+      alert(messageSuccès);
+
+        // affichage de la 2nde question
+        var reponseQuestion2 = prompt(question2);
+
+        console.log(typeof reponseQuestion2 );
+
+        // si la réponse données est 7
+        if( reponseQuestion2 == "7" ){
+
+
+            // FIXME : gérer les réponses textuelles, avec différentes casses...
+            // FIXME : gérer les réponses de types 7, 07, 007, 7.0
+            alert('Bravo');
+        } else {
+            alert('Erreur');
+            // TODO : permettre un nombre "infini" de tentatives pour la question 2
+        }
+    } else
+        alert('Erreur');
+        // TODO : permettre un nombre "infini" de tentatives pour la question 1
+</script>
+
+
+</body>
+</html>

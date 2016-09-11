@@ -1,0 +1,36 @@
+body {
+   background-color: white;
+   border-radius:1px;
+   box-shadow: 2px 1px 5px 7px blue;
+   margin: auto;
+   margin-top:100px;
+   width: 50%;
+   }
+   #principal {
+     background: url("images/webcode.jpg") no-repeat;
+   }
+p {
+   color: white;
+   text-align:justify;
+   font-family: verdana;
+   font-size: 20px;
+   text-align: left;
+}
+h1 {
+color: white;
+font-family: Arial;
+text-align:left;
+font-size:40px;
+color:
+}
+h2 {
+color:white;
+font-style: verdana;
+font-size:30px;
+}
+#mail {
+padding-left: 150px;
+}
+#tél {
+padding-left: 190px;
+}
